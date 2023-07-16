@@ -1,0 +1,11 @@
+#!/usr/bin/env nash
+
+?R_VAL = 21 * 2 + $1
+
+if(!isset $L_VAL) {
+    echo "L_VAL is not set!"
+    exit 1
+}
+else {
+    echo ? $L_VAL * $R_VAL
+}

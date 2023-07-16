@@ -1,0 +1,20 @@
+#!/usr/bin/env nash
+
+fun desc(a) {
+    if(isint $a) {
+        echo "int("$a")"
+    }
+    elif(isfloat $a) {
+        echo "float("$a")"
+    }
+    else {
+        echo "NonNumber("$a")"
+    }
+}
+
+fun desc(...) {
+    echo "This script takes only one argument"
+    exit 1
+}
+
+desc $@
